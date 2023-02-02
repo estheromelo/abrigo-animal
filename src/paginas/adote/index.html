@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abrigo Animal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header__container">
+        <div class="header__title">
+          <img src="/src/imagens/icon_pata.svg" alt="Ícone Pata" />
+          <h1>Abrigo Animal</h1>
+        </div>
+        <nav>
+          <ul class="nav__container">
+            <li>Sobre nós</li>
+            <li>Adote</li>
+            <li>Doação</li>
+            <li>Contato</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="adopt__container">
+      <div class="left__adopt__container">
+        <h1>Processo de adoção</h1>
+        <h2>
+          Está em busca de uma animal para completar a sua família? Preencha
+          agora a ficha de adoção e receba uma feedback por e-mail.
+        </h2>
+        <button class="btn__adopt__container">Preencher ficha de adoção</button>
+      </div class="right__adopt__container">
+      <img src="/src/imagens/adote.png" alt="" />
+    </section>
+
+    <main>
+      <form>
+        <h2>Ficha de adoção</h2>
+
+        <label for="nome_do_adotante"> Nome do Adotante </label>
+        <input
+          class="imput_container"
+          type="text"
+          id="nome_do_adotante"
+          required
+        />
+
+        <label for="endereço"> Endereço </label>
+        <input class="imput_container" type="text" id="Endereço" required />
+
+        <label for="bairro"> Bairro </label>
+        <input class="imput_container" type="text" id="Bairro" required />
+
+        <label for="cidade_estado"> Cidade/Estado </label>
+        <input
+          class="imput_container"
+          type="text"
+          id="Cidade/Estado"
+          required
+        />
+
+        <label for="cep"> CEP </label>
+        <input class="imput_container" type="number" id="CEP" required />
+
+        <label for="profissao"> Profissão </label>
+        <input class="imput_container" type="text" id="profissao" required />
+
+        <label for="estado__civil "> Estado Civil </label>
+        <input class="imput_container" type="text" id="Estado Civil" required />
+
+        <label for="telefone"> Telefone </label>
+        <input
+          class="imput_container"
+          type="tel"
+          id="Telefone"
+          required
+          placeholder="(XX)XXXXX-XXXX"
+        />
+
+        <label for="whatsapp"> Whatsapp </label>
+        <input class="imput_container" type="tel" id="Whatsapp" required />
+
+        <label> <input class="checkbox" type="checkbox" checked /> Ao informar meus dados, eu concordo com a Política de Privacidade e autorizo que a ONG entre em contato comigo.
+    
+        </label> 
+        <input type="submit" value="Enviar"/>
+
+      </form>
+    </main>
+
+    <footer class="footer_container">
+      <img src="/src/imagens/icon_pata.svg" alt="Ícone Pata" />
+      <h1>Abrigo Animal</h1>
+      <img
+        class="logo"
+        src="/src/imagens/img_facebook.svg"
+        alt="logo facebook"
+      />
+      <img
+        class="logo"
+        src="/src/imagens/img_instagram.svg"
+        alt="logo instagram"
+      />
+    </footer>
+  </body>
+</html>

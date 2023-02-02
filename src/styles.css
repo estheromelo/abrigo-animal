@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
     font-family: 'Montserrat', 'Segoe UI', -apple-system;
 }
 
@@ -18,14 +17,15 @@ table {
 }
 
 :root {
-    --cor-rosa: #F22C9A;
-    --cor-roxo: #6E00DB;
-    --cor-cinza: #333333;
-    --cor-azul: #58E1E8;
-    --cor-branco: #FFFFFF;
-    --cor-azulclaro: #F5F8FF;
-    --cor-cortexto: #64728C;
-    --cor--preto: #000000;
+    --cor-pink: #F22C9A;
+    --cor-purple: #6E00DB;
+    --cor-gray: #333333;
+    --cor-greenwater: #58E1E8;
+    --cor-white: #FFFFFF;
+    --cor-lightblue: #F5F8FF;
+    --cor-textcolor: #64728C;
+    --cor--black: #000000;
+    --cor--blue: #0039F5;
 }
 
 .container {
@@ -50,11 +50,11 @@ table {
 }
 
 .bg-white {
-    background-color: var(--cor-branco);
+    background-color: var(--cor-white);
 }
 
 .bg-blue {
-    background-color: var(--cor-azulclaro);
+    background-color: var(--cor-lightblue);
 }
 
 header {
@@ -62,9 +62,9 @@ header {
 }
 
 .header__container {
-    background-color: var(--cor-rosa);
+    background-color: var(--cor-pink);
     
-    position: fixed;
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,7 +79,7 @@ header {
 .header__title {
     display: flex;
     gap: 1rem;
-    color: var(--cor-branco);
+    color: var(--cor-white);
     font-weight: 700;
 }
 
@@ -95,7 +95,7 @@ header {
     display: flex;
     gap: 1rem;
     font-weight: 700;
-    color: var(--cor-branco);
+    color: var(--cor-white);
 }
 
 .nav__container li:hover {
@@ -107,15 +107,15 @@ header {
 }
 
 .home__container h1 {
-    color: var(--cor-cinza);
     text-transform: uppercase;
     font-size: 3.125rem;
+    color: var (--cor-gray)   
 }
 
 .home__container h2 {
     font-weight: 400;
     font-size: 1.5rem;
-    color: var(--cor-cortexto);
+    color: var(--cor-textcolor);
 }
 
 .home__container button:hover {
@@ -124,7 +124,7 @@ header {
 
 .home__container .left__container {
     gap: 1rem 0;
-    width: 50%;
+    flex-basis: 50%;
 }
 
 .about__container {
@@ -136,11 +136,11 @@ header {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--cor--preto);
+    color: var(--cor--black);
 }
 
 .about__container p {
-    color: var(--cor-cortexto);
+    color: var(--cor-textcolor);
     font-weight: 400;
     font-size: 1.5rem
 }
@@ -152,7 +152,7 @@ header {
 
 .steps__title {
     text-transform: uppercase;
-    color: var(--cor--preto);
+    color: var(--cor--black);
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
@@ -182,12 +182,15 @@ header {
 }
 
 .btn {
-    background-color: var(--cor-roxo);
-    color: var(--cor-branco);
+    background-color: var(--cor-purple);
+    color: var(--cor-white);
+
     text-transform: uppercase;
     font-weight: 700;
+
     width: 14.375rem;
     height: 3.25rem;
+    
     border-radius: .3125rem
 }
 
@@ -206,16 +209,41 @@ header {
 .donation__container .left__container .container__title {
     font-weight: 700;
     font-size: 2rem;
-    color: var(--cor--preto);
+    color: var(--cor--black);
     text-transform: uppercase;
 }
 
 .donation__container div p {
-    color: var(--cor-cortexto);
+    color: var(--cor-textcolor);
 }
 
 .contact__container {
     margin: 0 0 4rem;
+}
+
+.footer_container {
+    background-color: var(--cor-pink); 
+
+    width: 100%;
+    height: 110px;
+
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+    box-sizing: border-box;
+    gap: 1rem;
+}
+
+.footer_container h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cor-white);
+    flex-grow: 1;
+}
+
+.logo {
+    width: 14px;
+    height: 14px;
 }
 
 @media(max-width: 600px) {

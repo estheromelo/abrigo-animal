@@ -1,1 +1,42 @@
 @import url('../../styles.css');
+
+:root {
+    --cor-pink: #F22C9A;
+    --cor-purple: #6E00DB;
+    --cor-gray: #333333;
+    --cor-greenwater: #58E1E8;
+    --cor-white: #FFFFFF;
+    --cor-lightblue: #F5F8FF;
+    --cor-textcolor: #64728C;
+    --cor--black: #000000;
+    --cor--blue: #0039F5;
+}
+
+.adopt__container {
+    display: flex;
+}
+
+.left__adopt__container {
+    display: grid;
+    gap: 1rem;
+    width: 50%;
+}
+
+.btn__adopt__container {
+    border:none;
+    border-radius: .3125rem;
+
+    background: var(--cor--blue);
+    color: var(--cor-white);
+    text-transform: uppercase;
+    font-weight: 700;
+   
+
+    width: 19.75rem;
+    height: 52px;
+
+}
+
+form label {
+    display: block;
+}
