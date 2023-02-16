@@ -3,7 +3,13 @@
 .contact__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    margin-top: 4rem;
+
+    gap: 2rem;
 }
+
 
 .contact__container h1 {
     font-weight: 700;
@@ -14,11 +20,13 @@
     color: var(--cor-gray);
 }
 
-.contact__container  h2 {
+.contact__container h2 {
     font-weight: 400;
     font-size: 24px;
 
     color: var(--cor-textcolor);
+
+    text-align: center;
 }
 
 .contact__container ul {
@@ -26,12 +34,22 @@
     font-size: 24px;
 
     color: var(--cor-textcolor);
+
+    text-align: center;
 }
 
 .contact__us__container {
     display: flex;
+    justify-content: center;
+
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+}
+.contact__us__container form {
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+
+    gap: 0.5rem;
 }
 
 .contact__us__container h2 {
@@ -56,6 +74,7 @@
     padding: 0.5rem;
 }
 
+
 .contact__checkbox {
     font-weight: 400;
     font-size: 14px;
@@ -64,4 +83,41 @@
 
     color: var(--cor-textcolor);
 
+    margin-top: 0.5rem;
+}
+
+.policy__container {
+    font-weight: 400;
+
+    font-size: 14px;
+
+    color: var(--cor-purple);
+
+    margin-left: 1rem;
+}
+
+.contact__submit__container {
+    
+    height: 2.9375rem;
+    width: 71.25rem;
+    
+    border-radius: 5px;
+    border: none;
+
+    background-color: var(--cor-purple);
+
+    color: var(--cor-white);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.contact__submit__container:hover{
+    cursor: pointer;
+}
+
+ .message {
+    padding: 1rem;
 }
