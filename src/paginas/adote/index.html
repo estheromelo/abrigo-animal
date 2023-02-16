@@ -17,8 +17,8 @@
         </div>
         <nav>
           <ul class="nav__container">
-            <li>Sobre nós</li>
-            <li>Adote</li>
+            <li><a href="index.html"> Sobre nós </a></li>
+            <li><a class= "sublinhado" href="paginas/adote/index.html"> Adote </a></li>
             <li>Doação</li>
             <li>Contato</li>
           </ul>
@@ -26,21 +26,23 @@
       </div>
     </header>
 
-    <section class="adopt__container">
-      <div class="left__adopt__container">
+    <section
+      class="adopt__container container display-flex justify-center align-center"
+    >
+      <div class="left__container display-flex flex-column justify-center">
         <h1>Processo de adoção</h1>
         <h2>
           Está em busca de uma animal para completar a sua família? Preencha
           agora a ficha de adoção e receba uma feedback por e-mail.
         </h2>
-        <button class="btn__adopt__container">Preencher ficha de adoção</button>
-      </div class="right__adopt__container">
+        <button class="btn__adopt">Preencher ficha de adoção</button>
+      </div>
       <img src="/src/imagens/adote.png" alt="" />
     </section>
 
-    <main>
+    <main class="adopt__form">
       <form>
-        <h2>Ficha de adoção</h2>
+        <h2 class="adoption__form__container">Ficha de adoção</h2>
 
         <label for="nome_do_adotante"> Nome do Adotante </label>
         <input
@@ -53,43 +55,56 @@
         <label for="endereço"> Endereço </label>
         <input class="imput_container" type="text" id="Endereço" required />
 
-        <label for="bairro"> Bairro </label>
-        <input class="imput_container" type="text" id="Bairro" required />
+        <div class="form__part__1 form-part-n ">
+          <label for="bairro"> Bairro </label>
+          <input class="imput_container" type="text" id="Bairro" required />
 
-        <label for="cidade_estado"> Cidade/Estado </label>
-        <input
-          class="imput_container"
-          type="text"
-          id="Cidade/Estado"
-          required
-        />
+          <label for="cidade_estado"> Cidade/Estado </label>
+          <input
+            class="imput_container"
+            type="text"
+            id="Cidade/Estado"
+            required
+          />
 
-        <label for="cep"> CEP </label>
-        <input class="imput_container" type="number" id="CEP" required />
+          <label for="cep"> CEP </label>
+          <input class="imput_container" type="number" id="CEP" required />
+        </div>
 
-        <label for="profissao"> Profissão </label>
-        <input class="imput_container" type="text" id="profissao" required />
+        <div class="form__part__2 form-part-n ">
+          <label for="profissao"> Profissão </label>
+          <input class="imput_container" type="text" id="profissao" required />
 
-        <label for="estado__civil "> Estado Civil </label>
-        <input class="imput_container" type="text" id="Estado Civil" required />
+          <label for="estado__civil "> Estado Civil </label>
+          <input
+            class="imput_container"
+            type="text"
+            id="Estado Civil"
+            required
+          />
+        </div>
 
-        <label for="telefone"> Telefone </label>
-        <input
-          class="imput_container"
-          type="tel"
-          id="Telefone"
-          required
-          placeholder="(XX)XXXXX-XXXX"
-        />
+        <div class="form__part__3 form-part-n ">
+          <label for="telefone"> Telefone </label>
+          <input
+            class="imput_container"
+            type="tel"
+            id="Telefone"
+            required
+            placeholder="(XX)XXXXX-XXXX"
+          />
 
-        <label for="whatsapp"> Whatsapp </label>
-        <input class="imput_container" type="tel" id="Whatsapp" required />
+          <label for="whatsapp"> Whatsapp </label>
+          <input class="imput_container" type="tel" id="Whatsapp" required />
+        </div>
 
-        <label> <input class="checkbox" type="checkbox" checked /> Ao informar meus dados, eu concordo com a Política de Privacidade e autorizo que a ONG entre em contato comigo.
-    
-        </label> 
-        <input type="submit" value="Enviar"/>
-
+        <label id="checkbox__container">
+          <input class="checkbox" type="checkbox" checked /> Ao informar meus
+          dados, eu concordo com a Política de Privacidade e autorizo que a ONG
+          entre em contato comigo.
+        </label>
+        <a class="politica__container" href="#">Politica de Privacidade </a>
+        <input class="submit__container" type="submit" value="Enviar" />
       </form>
     </main>
 

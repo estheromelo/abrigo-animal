@@ -98,6 +98,11 @@ header {
     color: var(--cor-white);
 }
 
+.nav__container a {
+    text-decoration: none;
+    color: var(--cor-white);
+}
+
 .nav__container li:hover {
     cursor: pointer;
 }
@@ -190,7 +195,8 @@ header {
 
     width: 14.375rem;
     height: 3.25rem;
-    
+
+    border: none;
     border-radius: .3125rem
 }
 

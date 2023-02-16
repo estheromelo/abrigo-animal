@@ -1,42 +1,119 @@
-@import url('../../styles.css');
-
-:root {
-    --cor-pink: #F22C9A;
-    --cor-purple: #6E00DB;
-    --cor-gray: #333333;
-    --cor-greenwater: #58E1E8;
-    --cor-white: #FFFFFF;
-    --cor-lightblue: #F5F8FF;
-    --cor-textcolor: #64728C;
-    --cor--black: #000000;
-    --cor--blue: #0039F5;
-}
+@import url("../../styles.css");
 
 .adopt__container {
     display: flex;
+    Width: 1440px;
+    Height: 726px;
 }
 
-.left__adopt__container {
-    display: grid;
+.adopt__container .left__container {
+    flex-basis: 50%;
     gap: 1rem;
-    width: 50%;
 }
 
-.btn__adopt__container {
-    border:none;
-    border-radius: .3125rem;
+section h1 {
+    color: #333333;
+
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+section h2 {
+
+    color: #64728C;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.btn__adopt {
+    border: none;
+    border-radius: 0.3125rem;
 
     background: var(--cor--blue);
     color: var(--cor-white);
     text-transform: uppercase;
     font-weight: 700;
-   
 
     width: 19.75rem;
     height: 52px;
-
 }
+
+.adopt__form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #F5F8FF;
+}
+
+form {
+    display: grid;
+    gap: 0.5rem;
+}
+
 
 form label {
     display: block;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+form input {
+    padding: 1rem;
+
+    border-radius: .3125rem;
+}
+
+.form__part__1 {
+    gap: 0 3rem;
+}
+
+.form__part__2 {
+    gap: 0 2rem;
+}
+
+.form__part__3 {
+    gap: 0 2rem;
+}
+
+.form-part-n {
+    display: flex;
+
+}
+
+.adoption__form__container {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(black);
+}
+
+#checkbox__container {
+    font-weight: 400;
+    font-size: .875rem;
+    color: var(#64728C);
+
+}
+
+.politica__container {
+    font-weight: 400;
+
+    font-size: 14px;
+
+    color: var(--cor-purple);
+}
+
+.submit__container {
+    border: none;
+    border-radius: 0.3125rem;
+
+    background: var(--cor--blue);
+    color: var(--cor-white);
+    text-transform: uppercase;
+    font-weight: 700;
+
+    height: 2.9375rem;
+    width: 71.25rem
 }

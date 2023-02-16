@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abrigo Animal</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header__container">
+            <div class="header__title">
+                <img src="/src/imagens/icon_pata.svg alt="Ícone Pata" />
+                <h1>Abrigo Animal</h1>
+            </div>
+            <nav>
+                <ul class="nav__container">
+                    <li> <a href="index.html"> Sobre nós </a></li>
+                    <li><a href="paginas/adote/index.html"> Adote </a></li>
+                    <li>Doação</li>
+                    <li>Contato</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <h1 class="contato__container"> Contato </h1>
+        <h2> Quer adotar ou fazer uma doação? entra em contato com a gente :) </h2>
+        <ul>
+            <li> <strong> Telefone: </strong> (99) 9999-9999</li>
+            <li><strong> WhatsApp: </strong>(99) 9 9999-9999</li>
+            <li> <strong> E-mail: </strong> Abrigoanimal@ong.com.br</li>
+        </ul>
+        <img src="/src/imagens/icon_pata.svg" alt="Icone de pata">
+    </div>
+    <main class="fale__conosco__container">
+        <form>
+            <h2>Fale conosco</h2>
+
+            <label class="title__container" for="Nome">Nome</label>
+            <input class="fale__conosco__container__input" type="text" id="Nome" placeholder="Seu Nome" required />
+
+            <label class="title__container" for="WhatsApp">WhatsApp</label>
+            <input class="fale__conosco__container__input" type="text" id="WhatsApp" placeholder="Seu WhatsApp"
+                required />
+
+            <label class="title__container" for="Assunto">Assunto</label>
+            <input class="fale__conosco__container__input" type="text" id="Assunto" placeholder="Adotar animal"
+                required />
+
+            <label class="title__container" for="Mensagem">Mensagem </label>
+            <textarea id="Mensagem" cols="15" rows="15" placeholder="Sua Mensagem" required></textarea>
+
+            <label>
+                <input class="contato__checkbox" type="checkbox" checked /> Ao informar meus
+                dados, eu concordo com a Política de Privacidade.
+            </label>
+            <a class="politica__container" href="#">Politica de Privacidade </a>
+
+            <input class="contato__submit__containerbotao " type="submit" value="Enviar" />
+
+        </form>
+    </main>
+</body>
+
+<footer class="footer_container">
+    <img src="/src/imagens/icon_pata.svg" alt="Ícone Pata" />
+    <h1>Abrigo Animal</h1>
+    <img class="logo" src="/src/imagens/img_facebook.svg" alt="logo facebook" />
+    <img class="logo" src="/src/imagens/img_instagram.svg" alt="logo instagram" />
+</footer>
