@@ -1,47 +1,40 @@
 @import url('../../styles.css');
 
-.contato__container {
+.contact__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.contato__container h1 {
+.contact__container h1 {
     font-weight: 700;
     font-size: 64px;
-
-    line-height: 83.2px;
 
     text-transform: uppercase;
 
     color: var(--cor-gray);
 }
 
-.contato__container h2 {
+.contact__container  h2 {
     font-weight: 400;
     font-size: 24px;
-
-    line-height: 36px;
 
     color: var(--cor-textcolor);
 }
 
-.contato__container ul {
+.contact__container ul {
     font-weight: 400;
     font-size: 24px;
-
-    line-height: 36px;
 
     color: var(--cor-textcolor);
 }
 
-.fale__conosco__container {
+.contact__us__container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-.fale__conosco__container h2 {
+.contact__us__container h2 {
     font-size: 40px;
 
     font-weight: 700;
@@ -57,13 +50,13 @@
     color: var(--cor-black);
 }
 
-.fale__conosco__container__input {
+.contact__us__container__input {
     border-radius: 5px;
 
     padding: 0.5rem;
 }
 
-.contato__checkbox{
+.contact__checkbox {
     font-weight: 400;
     font-size: 14px;
 
