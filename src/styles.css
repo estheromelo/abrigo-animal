@@ -81,6 +81,8 @@ header {
     gap: 1rem;
     color: var(--cor-white);
     font-weight: 700;
+    
+    text-decoration: none;
 }
 
 .header__title h1 {

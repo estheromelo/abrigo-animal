@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abrigo Animal</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="./index.js"></script>
   </head>
 
   <body>
     <header>
       <div class="header__container">
-        <div class="header__title">
-          <img src="imagens/icon_pata.svg" alt="Ícone Pata" />
+        <a class="header__title" href="#">
+          <img src="./imagens/icon_pata.svg" alt="Ícone Pata" />
           <h1>Abrigo Animal</h1>
-        </div>
+        </a>
         <nav>
           <ul class="nav__container">
-            <li><a href="#">Sobre nós </a></li>
+            <li onclick="scrollToElement('about-container')">Sobre nós</li>
             <li><a href="paginas/adote/index.html">Adote</a></li>
-            <li>Doação</li>
-            <li> <a href="paginas/contato/index.html">Contato</a></li>
+            <li onclick="scrollToElement('donation-container')">Doação</li>
+            <li><a href="paginas/contato/index.html">Contato</a></li>
           </ul>
         </nav>
       </div>
@@ -34,13 +35,14 @@
           Dê a chance a um animalzinho de ter uma familía e seja recompensado
           diariamente com muito amor
         </h2>
-        <button class="btn">Adotar um animal</button>
+        <button class="btn" onclick="scrollToElement('steps-container')">Adotar um animal</button>
       </div>
       <img src="imagens/home_cachorro.png" alt="Menino segurando cachorro" />
     </section>
 
     <div
       class="container about__container display-flex align-center justify-center flex-column"
+      id="about-container"
     >
       <h2>Sobre nós</h2>
       <p>
@@ -57,7 +59,7 @@
       <img src="imagens/pata.png" alt="Pata de um cachorro" />
     </div>
 
-    <main class="container steps__container bg-blue">
+    <main class="container steps__container bg-blue" id="steps-container">
       <h2 class="steps__title">
         Passo a passo para <br />
         a adoção responsável
@@ -90,12 +92,15 @@
         </li>
       </ul>
       <div class="display-flex justify-center align-center">
-        <button class="btn">Adotar um animal</button>
+        <a href="paginas/adote/index.html">
+          <button class="btn">Adotar um animal</button>
+        </a>
       </div>
     </main>
 
     <section
       class="donation__container bg-white container display-flex justify-center align-center"
+      id="donation-container"
     >
       <div class="left__container display-flex flex-column">
         <h2 class="container__title">
@@ -116,7 +121,10 @@
       <img src="imagens/doacao.png" alt="menina segurando gato" />
     </section>
     <div class="contact__container display-flex justify-center align-center">
+
+      <a href="./paginas/contato/index.html">
       <button class="btn">Entrar em contato</button>
+    </a>
     </div>
 
     <footer class="footer_container">

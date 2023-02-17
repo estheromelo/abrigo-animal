@@ -1,128 +1,119 @@
 @import url("../../styles.css");
 
 .adopt__container {
-    display: flex;
-    Width: 1440px;
-    Height: 726px;
+  display: flex;
+  height: 726px;
+  gap: 0 2rem;
 }
 
 .adopt__container .left__container {
-    flex-basis: 50%;
-    gap: 1rem;
+  flex-basis: 50%;
+  gap: 1rem;
 }
 
 section h1 {
-    color: #333333;
+  color: #333333;
 
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 section h2 {
-
-    color: #64728C;
-    font-weight: 400;
-    font-size: 1.5rem;
+  color: #64728c;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .btn__adopt {
-    border: none;
-    border-radius: 0.3125rem;
+  border: none;
+  border-radius: 0.3125rem;
 
-    background: var(--cor--blue);
-    color: var(--cor-white);
-    text-transform: uppercase;
-    font-weight: 700;
+  background: var(--cor--blue);
+  color: var(--cor-white);
+  text-transform: uppercase;
+  font-weight: 700;
 
-    width: 19.75rem;
-    height: 52px;
+  width: 19.75rem;
+  height: 52px;
 }
 
 .btn__adopt:hover {
-        cursor: pointer;
-    }
-
+  cursor: pointer;
+}
 
 .adopt__form {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    background-color: #F5F8FF;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f5f8ff;
 }
 
 form {
-    display: grid;
-    gap: 0.5rem;
+  display: grid;
+  gap: 0.5rem;
 }
 
-
 form label {
-    display: block;
+  display: block;
 
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
 }
 
 form input {
-    padding: 1rem;
+  padding: 1rem;
 
-    border-radius: .3125rem;
-}
-
-.form__part__1 {
-    gap: 0 3rem;
-}
-
-.form__part__2 {
-    gap: 0 2rem;
-}
-
-.form__part__3 {
-    gap: 0 2rem;
+  border-radius: 0.3125rem;
 }
 
 .adoption__form__container {
-    font-weight: 700;
-    font-size: 2.5rem;
-    color: var(black);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(black);
 }
 
 #checkbox__container {
-    font-weight: 400;
-    font-size: .875rem;
-    color: var(#64728C);
-
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(#64728c);
 }
 
 .policy__container {
-    font-weight: 400;
+  font-weight: 400;
 
-    font-size: 14px;
+  font-size: 14px;
 
-    color: var(--cor-purple);
+  color: var(--cor-purple);
 }
 
 .submit__container {
-    border: none;
-    border-radius: 0.3125rem;
+  border: none;
+  border-radius: 0.3125rem;
 
-    background: var(--cor--blue);
-    color: var(--cor-white);
-    text-transform: uppercase;
-    font-weight: 700;
+  background: var(--cor--blue);
+  color: var(--cor-white);
+  text-transform: uppercase;
+  font-weight: 700;
 
-    height: 2.9375rem;
-    width: 71.25rem
+  height: 2.9375rem;
+  width: 71.25rem;
 }
 
-.submit__container:hover{
-    cursor: pointer;
+.submit__container:hover {
+  cursor: pointer;
 }
 
-.form__part__1 input  {
+.row {
+  display: flex;
+  gap: 0 2rem;
+}
 
-    display: block;
+.column {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
 }

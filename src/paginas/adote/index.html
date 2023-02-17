@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abrigo Animal</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="../../index.js"></script>
   </head>
 
   <body>
     <header>
       <div class="header__container">
-        <div class="header__title">
-          <img src="/imagens/icon_pata.svg" alt="Ícone Pata" />
+        <a class="header__title" href="../../index.html">
+          <img src="../../imagens/icon_pata.svg" alt="Ícone Pata" />
           <h1>Abrigo Animal</h1>
-        </div>
+        </a>
         <nav>
           <ul class="nav__container">
-            <li><a href="/index.html">Sobre nós</a></li>
+            <li> Sobre nós</li>
             <li><a href="#">Adote</a></li>
             <li>Doação</li>
-            <li><a href="/paginas/contato/index.html">Contato</a></li>
+            <li><a href="../contato/index.html">Contato</a></li>
           </ul>
         </nav>
       </div>
@@ -35,12 +36,12 @@
           Está em busca de uma animal para completar a sua família? Preencha
           agora a ficha de adoção e receba uma feedback por e-mail.
         </h2>
-        <button class="btn__adopt">Preencher ficha de adoção</button>
+        <button class="btn__adopt" onclick="scrollToElement('adoption-form')"> Preencher ficha de adoção</button>
       </div>
-      <img src="/imagens/adote.png" alt="cachorro e gato" />
+      <img src="../../imagens/adote.png" alt="cachorro e gato" />
     </section>
 
-    <main class="adopt__form">
+    <main class="adopt__form" id="adoption-form">
       <form>
         <h2 class="adoption__form__container">Ficha de adoção</h2>
 
@@ -55,45 +56,55 @@
         <label for="endereço">Endereço</label>
         <input class="imput_container" type="text" id="Endereço" required />
 
-        <div class="form__part__1 form-part-n ">
-          <label for="bairro"> Bairro </label> 
-          <input class="imput_container" type="text" id="Bairro" required />
-
-          <label for="cidade_estado"> Cidade/Estado </label>
-          <input
-            class="imput_container"
-            type="text"
-            id="Cidade/Estado"
-            required
-          />
-
-          <label for="cep"> CEP </label>
-          <input class="imput_container" type="number" id="CEP" required />
+        <div class="row">
+          <div class="column">
+            <label for="bairro"> Bairro </label>
+            <input class="imput_container" type="text" id="Bairro" required />
+          </div>
+          <div class="column">
+            <label for="cidade_estado"> Cidade/Estado </label>
+            <input
+              class="imput_container"
+              type="text"
+              id="Cidade/Estado"
+              required
+            />
+          </div>
+          <div class="column">
+            <label for="cep"> CEP </label>
+            <input class="imput_container" type="number" id="CEP" required />
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="profissao"> Profissão </label>
+            <input
+              class="imput_container"
+              type="text"
+              id="profissao"
+              required
+            />
+          </div>
+          <div class="column">
+            <label for="estado__civil "> Estado Civil </label>
+            <input
+              class="imput_container"
+              type="text"
+              id="Estado Civil"
+              required
+            />
+          </div>
         </div>
 
-        <div class="form__part__2 form-part-n ">
-          <label for="profissao"> Profissão </label>
-          <input class="imput_container" type="text" id="profissao" required />
-
-          <label for="estado__civil "> Estado Civil </label>
-          <input
-            class="imput_container"
-            type="text"
-            id="Estado Civil"
-            required
-          />
-        </div>
-
-        <div class="form__part__3 form-part-n ">
-          <label for="telefone"> Telefone </label>
-          <input
-            class="imput_container"
-            type="tel"
-            id="Telefone"
-            required />
-
-          <label for="whatsapp">Whatsapp </label>
-          <input class="imput_container" type="tel" id="Whatsapp" required />
+        <div class="row">
+          <div class="column">
+            <label for="telefone"> Telefone </label>
+            <input class="imput_container" type="tel" id="Telefone" required />
+          </div>
+          <div class="column">
+            <label for="whatsapp">Whatsapp </label>
+            <input class="imput_container" type="tel" id="Whatsapp" required />
+          </div>
         </div>
 
         <label id="checkbox__container">
@@ -107,16 +118,16 @@
     </main>
 
     <footer class="footer_container">
-      <img src="/imagens/icon_pata.svg" alt="Ícone Pata" />
+      <img src="../../imagens/icon_pata.svg" alt="Ícone Pata" />
       <h1>Abrigo Animal</h1>
       <img
         class="logo"
-        src="/imagens/img_facebook.svg"
+        src="../../imagens/img_facebook.svg"
         alt="logo facebook"
       />
       <img
         class="logo"
-        src="/imagens/img_instagram.svg"
+        src="../../imagens/img_instagram.svg"
         alt="logo instagram"
       />
     </footer>
