@@ -1,4 +1,4 @@
-#Projeto Abrigo Animal ❤️🐶
+## Projeto Abrigo Animal ❤️🐶
 
 Desenvolvido para treinar os conhecimentos adquiridos na semana 1,2 e 3 do Programa Desenvolve 2023 da Oboticário com a Alura! 
 
