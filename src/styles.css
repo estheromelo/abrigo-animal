@@ -63,16 +63,16 @@ header {
 
 .header__container {
     background-color: var(--cor-pink);
-    
-   
+
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     padding: 0 4rem;
     width: 100%;
     height: 7.5rem;
-    
+
     box-sizing: border-box;
 }
 
@@ -81,7 +81,7 @@ header {
     gap: 1rem;
     color: var(--cor-white);
     font-weight: 700;
-    
+
     text-decoration: none;
 }
 
@@ -116,7 +116,7 @@ header {
 .home__container h1 {
     text-transform: uppercase;
     font-size: 3.125rem;
-    color: var (--cor-gray)   
+    color: var (--cor-gray)
 }
 
 .home__container h2 {
@@ -229,8 +229,10 @@ header {
     margin: 0 0 4rem;
 }
 
+
+
 .footer_container {
-    background-color: var(--cor-pink); 
+    background-color: var(--cor-pink);
 
     width: 100%;
     height: 110px;
@@ -254,9 +256,43 @@ header {
     height: 14px;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 670px) {
+
+    .header__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+
+        padding: 0;
+    }
+
+    .contact__container {
+        margin-top: 3rem !important;
+    }
+
+    .contact__container h1 {
+        font-size: 32px !important;
+    }
+
+    .contact__container h2 {
+        font-size: 16px !important;
+    }
+
+    .contact__container li {
+        font-size: 16px !important;
+    }
+
+    #about-container {
+        padding: 1rem;
+    }
+
     .steps__container {
         height: 115rem !important;
+    }
+
+    .img {
+        max-width: 75%;
     }
 
     .home__container {
@@ -266,4 +302,147 @@ header {
     .donation__container {
         height: 60rem;
     }
+
+    #donation-container {
+        padding: 1rem;
+
+        text-align: center;
+    }
+
+    .img__adopt {
+        max-width: 75%;
+    }
+
+    .adoption__form__container {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .adopt__container {
+        padding: 3rem;
+    }
+
+    .adopt__form form {
+
+        gap: 0.5rem;
+        width: 90vw;
+        grid-template-columns: 90vw;
+    }
+
+    .submit__container {
+        width: 90vw !important;
+    }
+
+    .contact__container {
+        margin-bottom: 4rem !important;
+    }
+
+    .contact__us__container {
+        margin: 0 !important;
+    }
+
+    .contact__us__form {
+        width: 90vw;
+
+        padding: 1rem;
+    }
+
+    .contact__us__form h2 {
+        text-align: center;
+
+        padding: 1rem;
+
+        font-size: 32px !important;
+    }
+
+    .contact__submit__container {
+        width: 90vw !important;
+    }
 }
+
+
+@media(max-width: 768px) {
+
+    .left__container {
+        width: 60vw !important;
+    }
+
+    #home-container {
+        gap: 0 1rem;
+
+        flex-wrap: nowrap !important;
+    }
+
+    #home-container img {
+        width: 40vw !important;
+    }
+
+    .donation__container {
+        flex-wrap: nowrap;
+
+        gap: 0 2rem;
+
+        padding: 2rem;
+
+        margin-top: 3rem;
+    }
+
+    .btn__steps__container {
+        padding: 2rem;
+    }
+
+    .adopt__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 1rem;
+
+        height: 500px !important;
+    }
+
+
+    .left__container__adopt {
+        width: 44vw !important;
+    }
+
+    .img__adopt {
+        width: 46vw;
+    }
+
+    #adopt-form {
+        grid-template-columns: 90vw;
+    }
+
+
+    .adopt__form .row {
+        flex-direction: column;
+    }
+
+    .adopt__form form {
+        grid-template-columns: 90vw;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .submit__container {
+        width: 90vw !important;
+    }
+
+    .contact__us__container {
+        margin-bottom: 0 !important; 
+        margin-left: 0 !important;
+    }
+
+    .contact__us__form{
+        width: 90vw;
+    }
+
+    .contact__submit__container__p1 {
+        margin-bottom: 1rem;
+    }
+    .contact__submit__container {
+        width: 90vw !important;
+    }
+    }
+
