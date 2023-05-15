@@ -28,7 +28,7 @@ table {
     --cor--blue: #0039F5;
 }
 
-.container {
+.size {
     height: 45rem;
 }
 
@@ -85,7 +85,7 @@ header {
     text-decoration: none;
 }
 
-.header__title h1 {
+.header__title .title {
     font-size: 1rem;
 }
 
@@ -113,7 +113,7 @@ header {
     gap: 0 5rem;
 }
 
-.home__container h1 {
+.home__container .title__home {
     text-transform: uppercase;
     font-size: 3.125rem;
     color: var (--cor-gray)
@@ -188,7 +188,7 @@ header {
     padding: 1rem;
 }
 
-.btn {
+.action__btn {
     background-color: var(--cor-purple);
     color: var(--cor-white);
 
@@ -202,8 +202,10 @@ header {
     border-radius: .3125rem
 }
 
-.btn:hover {
+.action__btn:hover {
     cursor: pointer;
+    color:var(--cor-purple);
+    background-color:var(--cor-white); 
 }
 
 .donation__container {

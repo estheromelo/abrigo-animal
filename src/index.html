@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abrigo Animal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
     <script src="./index.js"></script>
   </head>
@@ -13,87 +15,101 @@
     <header>
       <div class="header__container">
         <a class="header__title" href="#">
-          <img src="./imagens/icon_pata.svg" alt="Ícone Pata" />
-          <h1>Abrigo Animal</h1>
+          <img src="./assets/icon_paw.svg" alt="Ícone Pata" />
+          <h1 class="title">Abrigo Animal</h1>
         </a>
         <nav>
           <ul class="nav__container">
             <li onclick="scrollToElement('about-container')">Sobre nós</li>
-            <li><a href="paginas/adote/index.html">Adote</a></li>
+            <li>
+              <a href="pages/adopt/index.html">Adote</a>
+            </li>
             <li onclick="scrollToElement('donation-container')">Doação</li>
-            <li><a href="paginas/contato/index.html">Contato</a></li>
+            <li>
+              <a href="pages/contact/index.html">Contato</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
+
     <section
-      class="container home__container bg-blue display-flex align-center justify-center" id="home-container"
+      class="size home__container bg-blue display-flex align-center justify-center"
+      id="home-container"
     >
       <div class="left__container display-flex flex-column">
-        <h1>Amor de verdade, não se compra, se encontra</h1>
+        <h1 class="title__home">Amor de verdade, não se compra, se encontra</h1>
         <h2>
           Dê a chance a um animalzinho de ter uma familía e seja recompensado
           diariamente com muito amor
         </h2>
-        <button class="btn" onclick="scrollToElement('steps-container')">Adotar um animal</button>
+        <button class="action__btn" onclick="scrollToElement('steps-container')">
+          Adotar um animal
+        </button>
       </div>
-      <img class="img" src="imagens/home_cachorro.png" alt="Menino segurando cachorro" />
+      <img
+        class="img"
+        src="assets/home_dog.png"
+        alt="Menino segurando cachorro"
+      />
     </section>
 
     <div
-      class="container about__container display-flex align-center justify-center flex-column"
-      id="about-container"
-    >
+      class="size about__container display-flex align-center justify-center flex-column"
+      id="about-container" >
       <h2>Sobre nós</h2>
       <p>
         Somos uma ONG apaixonada pelos amigos <br />
         peludos. Hoje somos ponte entre cães e gatos <br />
         que precisam de um lar e você que precisa amar.
       </p>
+
       <p>
         Cuidamos de mais de 500 animais abandonados <br />
         todos os dias e acreditamos que o animalzinho que <br />
         você procura para alegrar sua família está aqui, só <br />
         esperando pela chance de te fazer muito feliz!
       </p>
-      <img src="imagens/pata.png" alt="Pata de um cachorro" />
+      <img src="assets/paw.png" alt="Pata de um cachorro" />
     </div>
 
-    <main class="container steps__container bg-blue" id="steps-container">
+    <main class="size steps__container bg-blue" id="steps-container">
       <h2 class="steps__title">
         Passo a passo para <br />
         a adoção responsável
       </h2>
       <ul class="images__container">
         <li>
-          <img src="imagens/principal1.png" />
+          <img src="assets/woman_with_phone.png" />
           <p>
             Preencha a ficha de <br />
             adoção responsável
           </p>
         </li>
         <li>
-          <img src="imagens/principal2.png" />
+          <img src="assets/message_box.png" />
           <p>
             Aguarde o E-mail <br />
             de feedback
           </p>
         </li>
         <li>
-          <img src="imagens/principal3.png" />
+          <img src="assets/woman_and_dog.png" />
           <p>
             Após feedback, <br />
             vá até a ong
           </p>
         </li>
         <li>
-          <img src="imagens/principal4.png" />
+          <img src="assets/man_and_dog.png" />
           <p>Adote</p>
         </li>
       </ul>
-      <div class="display-flex justify-center align-center btn__steps__container">
-        <a href="paginas/adote/index.html">
-          <button class="btn">Adotar um animal</button>
+      <div
+        class="display-flex justify-center align-center btn__steps__container"
+      >
+        <a href="pages/adopt/index.html">
+          <button class="action__btn">Adotar um animal</button>
         </a>
       </div>
     </main>
@@ -118,20 +134,19 @@
           nossas redes sociais.
         </p>
       </div>
-      <img class="img" src="imagens/doacao.png" alt="menina segurando gato" />
+      <img class="img" src="assets/donation.png" alt="menina segurando gato" />
     </section>
     <div class="contact__container display-flex justify-center align-center">
-
-      <a href="./paginas/contato/index.html">
-      <button class="btn">Entrar em contato</button>
-    </a>
+      <a href="./pages/contact/index.html">
+        <button class="action__btn">Entrar em contato</button>
+      </a>
     </div>
 
     <footer class="footer_container">
-      <img src="imagens/icon_pata.svg" alt="Ícone Pata" />
+      <img src="assets/icon_paw.svg" alt="Ícone Pata" />
       <h1>Abrigo Animal</h1>
-      <img class="logo" src="imagens/img_facebook.svg" alt="logo facebook" />
-      <img class="logo" src="imagens/img_instagram.svg" alt="logo instagram" />
+      <img class="logo" src="assets/img_facebook.svg" alt="logo facebook" />
+      <img class="logo" src="assets/img_instagram.svg" alt="logo instagram" />
     </footer>
   </body>
 </html>

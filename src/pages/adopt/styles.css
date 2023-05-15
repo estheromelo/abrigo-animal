@@ -40,6 +40,8 @@ section h2 {
 
 .btn__adopt:hover {
   cursor: pointer;
+  background-color: var(--cor-white);
+  color:var(--cor--blue);
 }
 
 .adopt__form {
