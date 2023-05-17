@@ -2,7 +2,7 @@
 
 .adopt__container {
   display: flex;
-  height: 726px;
+  height: 800px;
   gap: 0 2rem;
 }
 
@@ -119,4 +119,15 @@ form input {
   flex-direction: column;
 
   flex: 1;
+}
+
+@media(max-width: 414px) {
+
+  .adopt__container {
+    display:flex;
+
+    flex-direction: column;
+  
+  
+}
 }

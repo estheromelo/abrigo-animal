@@ -90,6 +90,9 @@
 
     margin-top: 0.5rem;
 }
+#form {
+    padding: 2rem;
+}
 
 .policy__container {
     font-weight: 400;

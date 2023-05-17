@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;500&display=swap');
 
 * {
-    margin: 0;
+    margin: 0 !important;
     padding: 0;
     font-family: 'Montserrat', 'Segoe UI', -apple-system;
 }
@@ -29,7 +29,7 @@ table {
 }
 
 .size {
-    height: 45rem;
+    height: 64rem;
 }
 
 .display-flex {
@@ -80,9 +80,11 @@ header {
     display: flex;
     gap: 1rem;
     color: var(--cor-white);
-    font-weight: 700;
-
     text-decoration: none;
+}
+
+.title {
+    font-weight: 700 !important;
 }
 
 .header__title .title {
@@ -116,7 +118,8 @@ header {
 .home__container .title__home {
     text-transform: uppercase;
     font-size: 3.125rem;
-    color: var (--cor-gray)
+    color: var(--cor-gray) !important;
+    font-weight: 700 !important;
 }
 
 .home__container h2 {
@@ -214,6 +217,8 @@ header {
 
 .donation__container .left__container {
     gap: 1.5rem 0;
+
+    padding-top: 2rem;
 }
 
 .donation__container .left__container .container__title {
@@ -228,7 +233,9 @@ header {
 }
 
 .contact__container {
-    margin: 0 0 4rem;
+    margin: 0 0 4rem !important;
+ 
+    padding: 2rem;
 }
 
 
@@ -303,6 +310,10 @@ header {
 
     .donation__container {
         height: 60rem;
+
+        display: flex;
+
+        flex-direction: column !important;
     }
 
     #donation-container {
