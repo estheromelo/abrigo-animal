@@ -78,3 +78,34 @@ send.addEventListener("click", (event) => {
   limpaInformacoesCep();
   limpaInput();
 });
+
+
+function checaInput(input) {
+  const inputPreenchido= true;
+
+  input.forEach(function (input) {
+
+    if (input.value === "") {
+      inputPreenchido = false;
+    }
+
+  });
+  return  inputPreenchido;
+}
+
+const input = document.querySelectorAll("input");
+const button = document.querySelector("button-modal");
+
+input.forEach(function (input) {
+
+  input.addEventListener("keyup", function () {
+
+    if (checaInput(input)) {
+      button.disabled = false;
+    } else {
+      button.disabled = true;
+    }
+
+  });
+
+});

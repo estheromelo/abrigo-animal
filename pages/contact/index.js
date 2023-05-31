@@ -19,3 +19,11 @@ const send = document.getElementById("send");
 send.addEventListener("click", (event) => {
   limpaInput();
 });
+
+const inputs = $('input').on('keyup', verificarInputs);
+
+function verificarInputs() {
+    const preenchidos = inputs.get().every(({value}) => value)
+    $('button').prop('disabled', !preenchidos);}
+
+
